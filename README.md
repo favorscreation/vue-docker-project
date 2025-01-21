@@ -51,7 +51,7 @@ vue-docker-project/
 1.  **リポジトリのクローン (ホストPC)**
 
     ```bash
-    git clone <リポジトリURL>
+    git clone https://github.com/favorscreation/vue-docker-project.git
     cd vue-docker-project
     ```
 
@@ -123,7 +123,7 @@ vue-docker-project/
 7.  **Docker コンテナの起動 (ホストPC)**
 
     ```bash
-    docker-compose up -d --build
+    docker-compose up --build
     ```
 
     *   初回起動時は、イメージのダウンロードとパッケージのインストールに時間がかかる場合があります。
