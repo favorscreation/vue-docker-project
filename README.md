@@ -123,7 +123,11 @@ vue-docker-project/
 7.  **Docker コンテナの起動 (ホストPC)**
 
     ```bash
-    docker-compose up --build
+    docker compose up --build
+    ```
+    バックグラウンドで実行の場合
+    ```bash
+    docker compose up -d --build
     ```
 
     *   初回起動時は、イメージのダウンロードとパッケージのインストールに時間がかかる場合があります。
@@ -143,7 +147,13 @@ Vue.js の依存関係は `vue-app/package.json` に記述されています。�
 ## コンテナの停止
 
 ```bash
-docker-compose down
+docker compose stop
+```
+
+## コンテナの削除
+
+```bash
+docker compose down
 ```
 
 ## その他
