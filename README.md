@@ -43,8 +43,35 @@ vue-docker-project/
         *   `assets/`: 画像などの静的アセットを格納するディレクトリです。
         *   `main.js`: Vue.js アプリケーションのエントリーポイントとなる JavaScript ファイルです。
     *   `yarn.lock`: Yarn によって生成される依存関係固定ファイルです。
+ 
+## セットアップ手順 (クイック)
 
-## セットアップ手順 (全手順)
+1.  **リポジトリのクローン (ホストPC)**
+
+    ```bash
+    git clone https://github.com/favorscreation/vue-docker-project.git
+    cd vue-docker-project
+    ```
+    
+2.  **Docker コンテナの起動 (ホストPC)**
+
+    ```bash
+    docker compose up --build
+    ```
+    バックグラウンドで実行の場合
+    ```bash
+    docker compose up -d --build
+    ```
+
+    *   初回起動時は、イメージのダウンロードとパッケージのインストールに時間がかかる場合があります。
+
+3.  **ブラウザでアプリケーションにアクセス (ホストPC)**
+
+    ブラウザで `http://localhost:8080` にアクセスすると、Vue.js アプリケーションが表示されます。
+
+---
+
+## セットアップ手順 (テンプレートプロジェクト作成全手順)
 
 以下の手順で、Docker を使用した Vue.js 開発環境をセットアップしてください。
 
