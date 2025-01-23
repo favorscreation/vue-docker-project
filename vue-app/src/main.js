@@ -1,5 +1,18 @@
 import { createApp } from 'vue'
-import './style.css'
 import App from './App.vue'
+import { createRouter, createWebHistory } from 'vue-router';
+import GraphPage from './views/GraphPage.vue'
+import HelloWorld from './components/HelloWorld.vue'
 
-createApp(App).mount('#app')
+
+const routes = [
+    { path: '/', component: HelloWorld },
+    { path: '/graph', component: GraphPage },
+];
+
+const router = createRouter({
+    history: createWebHistory(),
+    routes,
+});
+
+createApp(App).use(router).mount('#app')
